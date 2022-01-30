@@ -8,7 +8,7 @@ rm -rf nacos-coredns-plugin
 
 # clone current codes
 git clone --depth=1 https://github.com.cnpmjs.org/haiyuanhe/nacos-coredns-plugin.git
-git clone --depth=1 --branch=v1.2.6 https://github.com.cnpmjs.org/coredns/coredns.git
+git clone --depth=1 -b v1.2.6 https://github.com.cnpmjs.org/coredns/coredns.git
 
 # cd coredns directory
 cd $GOPATH/src/coredns
