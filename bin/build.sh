@@ -7,12 +7,11 @@ rm -rf coredns
 rm -rf nacos-coredns-plugin
 
 # clone current codes
-git clone https://github.com/coredns/coredns.git
-git clone https://github.com/nacos-group/nacos-coredns-plugin.git
+git clone --depth=1 https://github.com/haiyuanhe/nacos-coredns-plugin.git
+git clone --depth=1 -b v1.2.6 https://github.com/nacos-group/nacos-coredns-plugin.git
 
 # cd coredns directory
 cd $GOPATH/src/coredns
-git checkout -b v1.2.6 v1.2.6
 go get github.com/cihub/seelog
 
 # copy nacos plugin to coredns
