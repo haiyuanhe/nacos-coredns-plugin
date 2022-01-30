@@ -12,7 +12,6 @@ git clone --depth=1 -b v1.2.6 https://github.com.cnpmjs.org/coredns/coredns.git
 
 # cd coredns directory
 cd $GOPATH/src/coredns
-go get github.com/cihub/seelog
 
 # copy nacos plugin to coredns
 cp -r ../nacos-coredns-plugin/nacos plugin/
